@@ -1,0 +1,76 @@
+nav, div, span{
+    font-family: 'Helvetica';
+}
+
+/*#profile-picture{
+    border-radius: 50%;
+}*/
+
+.resume-section-content{
+    padding: 1em;
+}
+
+#about_me, #education, #experience, #skills, #awards, #bucketlist {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+
+#education, #skills{
+}
+
+#navbar {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@media (max-width: 768px){
+    #navbar{
+        margin: 0;
+        position: unset;
+        top: 0%;
+        transform: translate(0, 0);
+    }
+
+    #profile-picture{
+        display: flex;
+        display: -ms-flex;
+        flex-direction: column;
+    }
+
+    #bucketlist{
+        height: 100%;
+    }
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 25%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.social-icon:last-child {
+    margin-right: 0;
+}
+
+footer{
+    text-align: center;
+}
+
+#completed{
+    color: #4caf50;
+}
+
+figcaption{
+    display: inline-block;
+}
