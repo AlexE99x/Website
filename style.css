@@ -17,7 +17,12 @@ nav, div, span{
     padding: 5rem 1rem;
 }
 
-#education, #skills{
+.establishment-name{
+    padding-left: 0.5em;
+}
+
+.establishment-information{
+    padding-left: 3em;
 }
 
 #navbar {
@@ -47,7 +52,7 @@ nav, div, span{
     }
 }
 
-.social-icon {
+.social-icon, .footer-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -67,10 +72,13 @@ footer{
     text-align: center;
 }
 
-#completed{
-    color: #4caf50;
+.footer-icon{
+    background-color: #ffffff;
+    color: #696969;
+    font-size: 2.5rem;
+    border-radius: 0;
 }
 
-figcaption{
-    display: inline-block;
+#completed{
+    color: #4caf50;
 }
