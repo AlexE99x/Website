@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/navbar-fixed-left.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/docs.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/docs.js"></script>
+
+    <script src="js/scroll.js"></script>
 
 </head>
     <nav class="navbar navbar-inverse navbar-fixed-left">
@@ -141,6 +142,7 @@
                                     <li>SQL</li>
                                     <li>PHP</li>
                                     <li>JavaScript</li>
+                                    <li>MIPS</li>
                                 </ul>
                             </div>
                         </div>
@@ -149,23 +151,23 @@
 
                 <hr/>
                 <section id="bucketlist">
-                    <div id="bucketlistTable">
+                    <div>
                         <h2>Bucket List</h2>
                         <div class="row justify-content-center">
                             <div class="col-md-10">
-                                <div class="row">
+                                <div class="row" id="bucketlist-table">
                                     <div class="col-md-4">
                                         <h4>Obtain a BSc in Computer Science</h4>
                                         <p>Computer Science has been my passion for a long time and currently studying the field on a full-time basis is a true privilege.</p>
                                         <p><b>Not Yet Completed</b></p>
                                     </div>
                                     <div class="col-md-4">
-                                        <h4 id="completed">Learn to drive</h4>
-                                        <p id="completed">A skill that is useful for everyday life and is something everybody should experience.</p>
-                                        <p id="completed"><b>Completed 25/09/2018</b></p>
+                                        <h4 class="completed">Learn to drive</h4>
+                                        <p class="completed">A skill that is useful for everyday life and is something everybody should experience.</p>
+                                        <p class="completed"><b>Completed: 25/09/2018</b></p>
                                     </div>
                                     <div class="col-md-4">
-                                        <h4>Visit USA</h4>
+                                        <h4>Visit the USA</h4>
                                         <p>Hopefully something I can do once I have saved up enough...either New York or LA.</p>
                                         <p><b>Not Yet Completed</b></p>
                                     </div>
@@ -199,6 +201,21 @@
                                         <p>This has always been my dream job which I hope to turn into a reality.</p>
                                         <p><b>Not Yet Completed</b></p>
                                     </div>
+                                    <div class="col-md-4">
+                                        <h4>Own a property</h4>
+                                        <p>Owning a place I can call home won't be easy but I'm up for the challenge.</p>
+                                        <p><b>Not Yet Completed</b></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>Visit 15+ countries in Europe</h4>
+                                        <p>There are so many great countries in Europe and I hope to see them all!</p>
+                                        <p><b>Not Yet Completed</b></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>Attend the Olympics</h4>
+                                        <p>Not sure which year though...either Paris 2024 or Los Angeles 2028!</p>
+                                        <p><b>Not Yet Completed</b></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,8 +230,8 @@
                         <a class="footer-icon" href="https://twitter.com/AlexanderJEarl" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="footer-icon" href="mailto:hello@alexanderearl.co.uk"><i class="fa fa-envelope"></i></a>
                     </div>
-                    <a href="https://github.com/AlexE99x/Website.git">Get the code here!</a>
-                    <p><i>Alexander Earl 2020</i></p>
+                    <a href="https://github.com/AlexE99x/Website.git"><b>Get the code here!</b></a>
+                    <p>Alexander Earl 2020</p>
                 </footer>
             </div>
         </div>

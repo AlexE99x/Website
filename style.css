@@ -1,6 +1,7 @@
-nav, div, span{
-    font-family: 'Helvetica';
+div, span{
+    font-family: "Microsoft YaHei";
 }
+
 
 /*#profile-picture{
     border-radius: 50%;
@@ -60,7 +61,7 @@ nav, div, span{
     width: 3.5rem;
     background-color: #495057;
     color: #fff;
-    border-radius: 25%;
+    border-radius: 75%;
     font-size: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -70,6 +71,7 @@ nav, div, span{
 
 footer{
     text-align: center;
+    align-content: center;
 }
 
 .footer-icon{
@@ -77,8 +79,13 @@ footer{
     color: #696969;
     font-size: 2.5rem;
     border-radius: 0;
+    margin-right: 0;
 }
 
-#completed{
+.completed{
     color: #4caf50;
+}
+
+#bucketlist-table {
+    padding-left: 3em;
 }
