@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Alexander Earl | Aspiring Software Engineer</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://alexanderearl.co.uk/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://alexanderearl.co.uk/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://alexanderearl.co.uk/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://alexanderearl.co.uk/assets/favicon/site.webmanifest">
 
     <meta name="description" content="Alexander Earl | Aspiring Software Engineer">
     <meta name="keywords" content="Alexander Earl, Software Engineer, Software Developer">
@@ -36,11 +42,11 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a class="nav-link" href="#about_me">About</a></li>
-                    <li><a class="nav-link" href="#education">Education</a></li>
-                    <li><a class="nav-link" href="#experience">Experience</a></li>
-                    <li><a class="nav-link" href="#skills">Skills</a></li>
-                    <li><a class="nav-link" href="#bucketlist">Bucket List</a></li>
+                    <li><a class="nav-link" href="#about_me"><b>About</b></a></li>
+                    <li><a class="nav-link" href="#education"><b>Education</b></a></li>
+                    <li><a class="nav-link" href="#experience"><b>Experience</b></a></li>
+                    <li><a class="nav-link" href="#skills"><b>Skills</b></a></li>
+                    <li><a class="nav-link" href="#bucketlist"><b>Bucket List</b></a></li>
                 </ul>
             </div>
     </nav>
@@ -48,10 +54,10 @@
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-md-12">
-                <section class="resume-section" id="about_me">
-<!--                    <img id="profile-picture" src="assets/img/profile.png" alt="Alexander Earl" height="175" width="175">-->
-                    <div class="resume-section-content">
-                        <h1 class="mb-0">
+                <section id="about_me">
+<!--                   <img id="profile-picture" src="assets/img/profile.png" alt="Alexander Earl" height="175" width="175">-->
+                    <div>
+                        <h1>
                             <span class="text-primary">A</span>lexander <span class="text-primary">E</span>arl
                         </h1>
                         <p class="lead mb-5">2nd Year Computer Science Undergraduate @<a href="https://www.qmul.ac.uk">QMUL</a> & Aspiring Software Engineer</p>
@@ -70,41 +76,50 @@
                         <h2>Education</h2>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h4 class="establishment-name">Queen Mary University of London</h4>
-                                <div class="establishment-information">
-                                    <div><b>BSc (Hons) Computer Science</b></div>
-                                    <p>
-                                        Science and Engineering Foundation Program (68.6%)<br>
-                                        Year 1 (First - 85.5%)<br>
-                                        Year 2 (TBD)<br>
-                                        Year 3 (TBD)<br>
-                                    </p>
-                                    <span class="fas fa-location-arrow"> </span> Mile End, London<br><p></p>
-                                    <div><span class="text-primary">2018 - 2022</span></div>
+                                <div class="establishment">
+                                    <h4 class="establishment-name">Queen Mary University of London</h4>
+                                    <img id="QMUL" src="assets/img/QMUL.jpg" alt="QMUL" width="150" height="150">
+                                    <div class="establishment-information">
+                                        <div><b>BSc (Hons) Computer Science</b></div>
+                                        <p>
+                                            Science and Engineering Foundation Program (68.6%)<br>
+                                            Year 1 (First - 85.5%)<br>
+                                            Year 2 (TBD)<br>
+                                            Year 3 (TBD)<br>
+                                        </p>
+                                        <span class="fas fa-location-arrow"> </span> Mile End, London<br><p></p>
+                                        <div><span class="text-primary">2018 - 2022</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="d-flex flex-column flex-md-row justify-content-between">
                             <div class="flex-grow-1">
-                                <h4 class="establishment-name">Haberdashers' Aske's Crayford Academy - Sixth Form</h4>
-                                        <div class="establishment-information">
-                                            <div><b>A-Levels</b></div>
-                                            <p>3 (B-C)</p>
-                                            <span class="fas fa-location-arrow"> </span> Crayford, Kent<br><p></p>
-                                            <span class="text-primary">2015 - 2018</span>
-                                        </div>
+                                <div class="establishment2">
+                                    <h4 class="establishment-name">Haberdashers' Aske's Crayford Academy - Sixth Form</h4>
+                                    <img id="haberdashers" src="assets/img/Haberdashers.jpg" alt="Haberdashers" width="150" height="150">
+                                            <div class="establishment2-information">
+                                                <div><b>A-Levels</b></div>
+                                                <p>3 (B-C)</p>
+                                                <span class="fas fa-location-arrow"> </span> Crayford, Kent<br><p></p>
+                                                <span class="text-primary">2015 - 2018</span>
+                                            </div>
                                 </div>
                             </div>
+                        </div>
 
                         <div class="d-flex flex-column flex-md-row justify-content-between">
                             <div class="flex-grow-1">
-                                <h4 class="establishment-name">Haberdashers' Aske's Crayford Academy</h4>
-                                <div class="establishment-information">
-                                    <div><b>GCSEs</b></div>
-                                    <p>7 (A-C)</p>
-                                    <span class="fas fa-location-arrow"> </span> Crayford, Kent<br><p></p>
-                                    <div><span class="text-primary">2010 - 2015</span></div>
+                                <div class="establishment2">
+                                    <h4 class="establishment-name">Haberdashers' Aske's Crayford Academy</h4>
+                                    <img id="haberdashers" src="assets/img/Haberdashers.jpg" alt="Haberdashers" width="150" height="150">
+                                    <div class="establishment2-information">
+                                        <div><b>GCSEs</b></div>
+                                        <p>7 (A-C)</p>
+                                        <span class="fas fa-location-arrow"> </span> Crayford, Kent<br><p></p>
+                                        <div><span class="text-primary">2010 - 2015</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +218,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <h4>Own a property</h4>
-                                        <p>Owning a place I can call home won't be easy but I'm up for the challenge.</p>
+                                        <p>Owning a place I can call my own will not be easy...but I'm up for the challenge.</p>
                                         <p><b>Not Yet Completed</b></p>
                                     </div>
                                     <div class="col-md-4">
@@ -236,5 +251,5 @@
             </div>
         </div>
     </div>
-</div>
+</html>
 </html>

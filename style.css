@@ -1,14 +1,21 @@
+.nav-link{
+    font-size: 110%;
+}
+
 div, span{
     font-family: "Microsoft YaHei";
 }
-
 
 /*#profile-picture{
     border-radius: 50%;
 }*/
 
-.resume-section-content{
+#about_me{
     padding: 1em;
+}
+
+#education{
+    width: 100%;
 }
 
 #about_me, #education, #experience, #skills, #awards, #bucketlist {
@@ -20,10 +27,12 @@ div, span{
 
 .establishment-name{
     padding-left: 0.5em;
+    width: 100%;
 }
 
 .establishment-information{
     padding-left: 3em;
+    width: 100%;
 }
 
 #navbar {
@@ -50,6 +59,26 @@ div, span{
 
     #bucketlist{
         height: 100%;
+    }
+
+    #QMUL, #haberdashers{
+        visibility: hidden;
+        margin: 0;
+    }
+
+    .establishment{
+        margin: 0em;
+        padding-top: 0em;
+    }
+
+    .establishment2{
+        padding-bottom: 0em;
+        margin: 0em;
+        padding-top: 0em;
+    }
+
+    .establishment2-information{
+        padding-top: 0em;
     }
 }
 
@@ -88,4 +117,24 @@ footer{
 
 #bucketlist-table {
     padding-left: 3em;
+}
+
+.establishment{
+    margin: 1em;
+    padding-top: 1em;
+}
+
+.establishment2{
+    padding-bottom: 3em;
+    margin: 1em;
+    padding-top: 1em;
+}
+
+.establishment2-information{
+    padding-top: 1.5em;
+}
+
+#QMUL, #haberdashers{
+    float: left;
+    margin: 1em;
 }
