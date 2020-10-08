@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://alexanderearl.co.uk/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://alexanderearl.co.uk/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://alexanderearl.co.uk/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://alexanderearl.co.uk/assets/favicon/site.webmanifest">
 
     <meta name="description" content="Alexander Earl | Aspiring Software Engineer">
     <meta name="keywords" content="Alexander Earl, Software Engineer, Software Developer">
@@ -29,8 +28,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="js/scroll.js"></script>
-
 </head>
+    <body>
     <nav class="navbar navbar-inverse navbar-fixed-left">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,14 +38,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="#about_me"><img id="nav-favicon" src="assets/favicon/apple-touch-icon.png" height="50" width="50" alt="AE"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a class="nav-link" href="#about_me"><b>About</b></a></li>
-                    <li><a class="nav-link" href="#education"><b>Education</b></a></li>
-                    <li><a class="nav-link" href="#experience"><b>Experience</b></a></li>
-                    <li><a class="nav-link" href="#skills"><b>Skills</b></a></li>
-                    <li><a class="nav-link" href="#bucketlist"><b>Bucket List</b></a></li>
+                    <li><a class="nav-link" href="#nav-experience"><b>Experience</b></a></li>
+                    <li><a class="nav-link" href="#nav-education"><b>Education</b></a></li>
+                    <li><a class="nav-link" href="#nav-skills"><b>Skills</b></a></li>
+                    <li><a class="nav-link" href="#nav-bucketlist"><b>Bucket List</b></a></li>
                 </ul>
             </div>
     </nav>
@@ -54,7 +54,7 @@
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-md-12">
-                <section id="about_me">
+                <section class="child" id="about_me">
 <!--                   <img id="profile-picture" src="assets/img/profile.png" alt="Alexander Earl" height="175" width="175">-->
                     <div>
                         <h1>
@@ -70,25 +70,44 @@
                     </div>
                 </section>
 
-                <hr/>
-                <section id="education">
+                <hr id="nav-experience"/>
+                <section class="child" id="experience">
+                    <div>
+                        <h2>Experience</h2>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <div class="establishment">
+                                    <h4 class="establishment-name">Bursted Wood Primary School</h4>
+                                    <img id="bursted" src="assets/img/Bursted.png" alt="Bursted Wood Logo" width="128" height="128">
+                                    <div class="establishment-information">
+                                        <p><b>Network Administrator</b></p>
+                                        <p>Work Experience Placement</p>
+                                        <span class="fas fa-location-arrow"> </span> Bexleyheath, Kent<br><p></p>
+                                        <div><span class="text-primary">2016</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr id="nav-education"/>
+                <section class="child" id="education">
                     <div>
                         <h2>Education</h2>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
                                 <div class="establishment">
                                     <h4 class="establishment-name">Queen Mary University of London</h4>
-                                    <img id="QMUL" src="assets/img/QMUL.jpg" alt="QMUL" width="150" height="150">
+                                    <img id="QMUL" src="assets/img/QMUL.jpg" alt="QMUL" width="130" height="130">
                                     <div class="establishment-information">
                                         <div><b>BSc (Hons) Computer Science</b></div>
                                         <p>
                                             Science and Engineering Foundation Program (68.6%)<br>
-                                            Year 1 (First - 85.5%)<br>
-                                            Year 2 (TBD)<br>
-                                            Year 3 (TBD)<br>
+                                            Year 1 (<i>1st Class</i> - 85.5%)
                                         </p>
                                         <span class="fas fa-location-arrow"> </span> Mile End, London<br><p></p>
-                                        <div><span class="text-primary">2018 - 2022</span></div>
+                                        <span class="text-primary">2018 - 2022</span>
                                     </div>
                                 </div>
                             </div>
@@ -97,14 +116,14 @@
                         <div class="d-flex flex-column flex-md-row justify-content-between">
                             <div class="flex-grow-1">
                                 <div class="establishment2">
-                                    <h4 class="establishment-name">Haberdashers' Aske's Crayford Academy - Sixth Form</h4>
-                                    <img id="haberdashers" src="assets/img/Haberdashers.jpg" alt="Haberdashers" width="150" height="150">
-                                            <div class="establishment2-information">
-                                                <div><b>A-Levels</b></div>
-                                                <p>3 (B-C)</p>
-                                                <span class="fas fa-location-arrow"> </span> Crayford, Kent<br><p></p>
-                                                <span class="text-primary">2015 - 2018</span>
-                                            </div>
+                                    <h4 class="haberdashers-name">Haberdashers' Aske's Crayford Academy - Sixth Form</h4>
+                                    <img id="haberdashers" src="assets/img/Haberdashers.png" alt="Haberdashers" width="129" height="148">
+                                        <div class="establishment2-information">
+                                            <div><b>A-Levels</b></div>
+                                            <p>3 (B-C)</p>
+                                            <span class="fas fa-location-arrow"> </span> Crayford, Kent<br><p></p>
+                                            <span class="text-primary">2015 - 2018</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +131,8 @@
                         <div class="d-flex flex-column flex-md-row justify-content-between">
                             <div class="flex-grow-1">
                                 <div class="establishment2">
-                                    <h4 class="establishment-name">Haberdashers' Aske's Crayford Academy</h4>
-                                    <img id="haberdashers" src="assets/img/Haberdashers.jpg" alt="Haberdashers" width="150" height="150">
+                                    <h4 class="haberdashers-name" id="habs-school">Haberdashers' Aske's Crayford Academy</h4>
+                                    <img id="haberdashers" src="assets/img/Haberdashers.png" alt="Haberdashers" width="129" height="148">
                                     <div class="establishment2-information">
                                         <div><b>GCSEs</b></div>
                                         <p>7 (A-C)</p>
@@ -126,46 +145,30 @@
                     </div>
                 </section>
 
-                <hr/>
-                <section id="experience">
-                    <div>
-                        <h2 >Experience</h2>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h4 class="establishment-name">Bursted Wood Primary School</h4>
-                                <div class="establishment-information">
-                                    <p>Network Administrator - Work Experience Placement</p>
-                                    <span class="fas fa-location-arrow"> </span> Bexleyheath, Kent<br><p></p>
-                                    <div><span class="text-primary">2016</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <hr/>
-                <section id="skills">
+                <hr id="nav-skills"/>
+                <section class="child" id="skills">
                     <div>
                         <h2>Skills</h2>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <ul>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>SQL</li>
-                                    <li>PHP</li>
-                                    <li>JavaScript</li>
-                                    <li>MIPS</li>
+                                <ul class="skills-list">
+                                    <li><p class='fab'>&#xf4e4;</p></li>
+                                    <li><a><p class="skills-project">Java OOP Project</p></a></li>
+                                    <li><p class='fab'>&#xf3e2;</p>&#9;<p class='fas'>&#xf1c0;</p></li>
+                                    <li><a><p class="skills-project">Python & SQL Project</p></a></li>
+                                    <li><a><p class="skills-project">Python & SQL Project Documentation</p></a></li>
+                                    <li><p class='fab'>&#xf13b;</p>&#9;<p class='fab'>&#xf13c;</li>
+                                    <li><a><p class="skills-project">HTML5 & CSS3 Project</p></a></li>
+                                    <li><p class='fab'>&#xf457;</p>&#9;<p class='fab'>&#xf3b9;</p></li>
+                                    <li><a><p class="skills-project">PHP & JavaScript</p></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <hr/>
-                <section id="bucketlist">
+                <hr id="nav-bucketlist"/>
+                <section class="child" id="bucketlist">
                     <div>
                         <h2>Bucket List</h2>
                         <div class="row justify-content-center">
@@ -197,14 +200,9 @@
                                         <p><b>Not Yet Completed</b></p>
                                     </div>
                                     <div class="col-md-4">
-                                        <h4>Get a Chelsea FC season ticket</h4>
-                                        <p>Preferably a West Upper area seat.</p>
-                                        <p><b>Not Yet Completed</b></p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h4>Attend an NBA game</h4>
-                                        <p>I've always been a fan of basketball so seeing a game in real-life would definitely be an memorable experience.</p>
-                                        <p><b>Not Yet Completed</b></p>
+                                        <h4 class="completed">Achieve 100% in a university module</h4>
+                                        <p class="completed">Completed <i>Fundamentals of Web Technology</i> module with a 100% grade.</p>
+                                        <p class="completed"><b>Completed: 04/08/2020</b></p>
                                     </div>
                                     <div class="col-md-4">
                                         <h4>Obtain a software engineer internship</h4>
@@ -219,16 +217,6 @@
                                     <div class="col-md-4">
                                         <h4>Own a property</h4>
                                         <p>Owning a place I can call my own will not be easy...but I'm up for the challenge.</p>
-                                        <p><b>Not Yet Completed</b></p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h4>Visit 15+ countries in Europe</h4>
-                                        <p>There are so many great countries in Europe and I hope to see them all!</p>
-                                        <p><b>Not Yet Completed</b></p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h4>Attend the Olympics</h4>
-                                        <p>Not sure which year though...either Paris 2024 or Los Angeles 2028!</p>
                                         <p><b>Not Yet Completed</b></p>
                                     </div>
                                 </div>
@@ -251,5 +239,5 @@
             </div>
         </div>
     </div>
-</html>
+    </body>
 </html>

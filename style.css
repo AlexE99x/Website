@@ -1,20 +1,40 @@
-.nav-link{
-    font-size: 110%;
-}
-
 div, span{
     font-family: "Microsoft YaHei";
 }
 
-/*#profile-picture{
-    border-radius: 50%;
-}*/
+/* NAVIGATION */
 
-#about_me{
-    padding: 1em;
-}
+    .nav-link{
+        font-size: 110%;
+    }
 
-#education{
+    #navbar {
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .navbar-brand{
+        visibility: hidden;
+    }
+
+/* NAVIGATION END */
+
+/* ABOUT ME */
+
+    #about_me{
+        padding: 1em;
+    }
+
+    /*#profile-picture{
+        border-radius: 50%;
+    }*/
+
+/* ABOUT ME END */
+
+#education, #experience{
     width: 100%;
 }
 
@@ -25,62 +45,63 @@ div, span{
     padding: 5rem 1rem;
 }
 
+#experience, #skills{
+    /*background-color: #f3f3f3; */
+}
+
+/* EDUCATION SECTION START */
+
+.establishment{
+    margin: 1em;
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
 .establishment-name{
     padding-left: 0.5em;
     width: 100%;
+    padding-top: 0.75em;
 }
 
 .establishment-information{
     padding-left: 3em;
+    padding-top: 0.5em;
     width: 100%;
 }
 
-#navbar {
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+.establishment2{
+    padding-bottom: 3em;
+    margin: 1em;
 }
 
-@media (max-width: 768px){
-    #navbar{
-        margin: 0;
-        position: unset;
-        top: 0%;
-        transform: translate(0, 0);
-    }
-
-    #profile-picture{
-        display: flex;
-        display: -ms-flex;
-        flex-direction: column;
-    }
-
-    #bucketlist{
-        height: 100%;
-    }
-
-    #QMUL, #haberdashers{
-        visibility: hidden;
-        margin: 0;
-    }
-
-    .establishment{
-        margin: 0em;
-        padding-top: 0em;
-    }
-
-    .establishment2{
-        padding-bottom: 0em;
-        margin: 0em;
-        padding-top: 0em;
-    }
-
-    .establishment2-information{
-        padding-top: 0em;
-    }
+.establishment2-information{
+    padding-top: 2em;
 }
+
+#QMUL, #haberdashers, #bursted{
+    float: left;
+    margin: 1em;
+}
+
+
+/* EDUCATION END */
+
+/* SKILLS START */
+
+.skills-list{
+    font-size:64px;
+    color: #2196f3;
+    list-style-type: none;
+}
+
+.skills-project{
+    font-size: small;
+    color: black;
+}
+
+/* SKILLS END */
+
+/* SOCIAL ICONS START */
 
 .social-icon, .footer-icon {
     display: inline-flex;
@@ -98,43 +119,86 @@ div, span{
     margin-right: 0;
 }
 
-footer{
-    text-align: center;
-    align-content: center;
-}
+/* SOCIAL ICONS END */
 
-.footer-icon{
-    background-color: #ffffff;
-    color: #696969;
-    font-size: 2.5rem;
-    border-radius: 0;
-    margin-right: 0;
+/* BUCKETLIST START */
+
+#bucketlist-table {
+    padding-left: 3em;
 }
 
 .completed{
     color: #4caf50;
 }
 
-#bucketlist-table {
-    padding-left: 3em;
+/* BUCKETLIST END */
+
+/* FOOTER START */
+
+footer{
+    text-align: center;
+    align-content: center;
 }
 
-.establishment{
-    margin: 1em;
-    padding-top: 1em;
+.footer-icon{
+    background-color: transparent;
+    color: #696969;
+    font-size: 2.5rem;
+    border-radius: 0;
+    margin-right: 0;
 }
 
-.establishment2{
-    padding-bottom: 3em;
-    margin: 1em;
-    padding-top: 1em;
-}
+/* FOOTER END */
 
-.establishment2-information{
-    padding-top: 1.5em;
-}
+@media (max-width: 768px){
+    .navbar-brand{
+        visibility: visible;
+        padding-top: 0.35em;
+        margin: 0;
+    }
 
-#QMUL, #haberdashers{
-    float: left;
-    margin: 1em;
+    #navbar{
+        margin: 0;
+        position: unset;
+        top: 0;
+        transform: translate(0, 0);
+    }
+
+    #bucketlist, #education, #skills{
+        height: 100%;
+    }
+
+    #profile-picture{
+        display: flex;
+        display: -ms-flex;
+        flex-direction: column;
+    }
+
+    .establishment, .establishment2, .establishment2-information, .establishment-name, .establishment-information{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .establishment-information{
+        padding-top: 0.65em;
+        padding-left: 1.25em;
+        padding-bottom: 1em;
+    }
+
+    .establishment2-information{
+        padding-top: 1.75em;
+        padding-left: 1.25em;
+        padding-bottom: 1em;
+    }
+
+    .establishment-name{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    #habs-school{
+        padding-top: 1.5em;
+    }
+
 }
